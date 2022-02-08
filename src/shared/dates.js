@@ -321,6 +321,7 @@ export function isWeekend(date, calendarType = CALENDAR_TYPES.ISO_8601) {
     case CALENDAR_TYPES.HEBREW:
       return weekday === FRIDAY || weekday === SATURDAY;
     case CALENDAR_TYPES.ISO_8601:
+      return weekday === SUNDAY;
     case CALENDAR_TYPES.US:
       return weekday === SATURDAY || weekday === SUNDAY;
     default:
